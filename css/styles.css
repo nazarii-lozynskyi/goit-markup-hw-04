@@ -432,21 +432,47 @@ body {
 .team-soc-link-item {
   display: inline-flex;
 
-  padding: 12px;
-
-  border: 1px solid teal;
+  background: var(--wight-color);
   border-radius: 50%;
 
   background-repeat: no-repeat;
   background-position: center;
 }
+.team-soc-link {
+  display: flex;
+  height: 44px;
+  width: 44px;
+
+  padding: 12px 12px;
+
+  border-radius: 50%;
+  background: var(--wight-color);
+}
+
+.team-soc-link:hover,
+.team-soc-link:focus,
+.team-soc-link:active {
+  background: var(--accent-color);
+}
+
+.team-soc-link-item:hover {
+  background: var(--accent-color);
+  fill: var(--wight-color);
+}
+
 .team-soc-link-item:not(:last-child) {
   margin-right: 10px;
 }
 
-.team-soc-link {
+.team-soc-link-icon {
+  fill: #afb1b8;
+
   height: 20px;
   width: 20px;
+}
+.team-soc-link-icon:hover {
+  fill: var(--wight-color);
+  background: var(--accent-color);
 }
 
 /*================ END OUR TEAM =================*/
@@ -561,21 +587,12 @@ body {
   background-position: center;
 }
 
-.social-icon-instagram {
-  background-image: url("../images/icons/social-link-footer/instagram.svg");
+.footer-social-link:hover,
+.footer-social-link:active,
+.footer-social-link:focus {
+  background: var(--accent-color);
 }
 
-.social-icon-twitter {
-  background-image: url("../images/icons/social-link-footer/twitter.svg");
-}
-
-.social-icon-facebook {
-  background-image: url("../images/icons/social-link-footer/facebook.svg");
-}
-
-.social-icon-linkedin {
-  background-image: url("../images/icons/social-link-footer/linkedin.svg");
-}
 /*========== END ADDRESS ========*/
 /*================== END FOOTER ==================*/
 /*************** END INDEX.html styles ************/
