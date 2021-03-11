@@ -425,55 +425,59 @@ body {
 .team-soc-link-list {
   display: flex;
 
-  justify-content: center;
-  align-items: center;
+  padding: 0;
+  margin: 0;
+  /*justify-content: center;
+  align-items: center;*/
 }
 
 .team-soc-link-item {
-  display: inline-flex;
-
-  background: var(--wight-color);
-  border-radius: 50%;
-
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.team-soc-link {
   display: flex;
+  justify-items: center;
+  align-items: center;
+
   height: 44px;
   width: 44px;
 
-  padding: 12px 12px;
+  border-radius: 50%;
+}
+.team-soc-link {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+
+  height: 100%;
+  width: 100%;
 
   border-radius: 50%;
-  background: var(--wight-color);
 }
 
 .team-soc-link:hover,
 .team-soc-link:focus,
 .team-soc-link:active {
   background: var(--accent-color);
-}
-
-.team-soc-link-item:hover {
-  background: var(--accent-color);
   fill: var(--wight-color);
 }
+
+/*.team-soc-link-item:hover {
+  background: var(--accent-color);
+  fill: var(--wight-color);
+}*/
 
 .team-soc-link-item:not(:last-child) {
   margin-right: 10px;
 }
 
 .team-soc-link-icon {
-  fill: #afb1b8;
+  display: flex;
 
-  height: 20px;
   width: 20px;
+  height: 20px;
+
+  fill: #afb1b8;
 }
-.team-soc-link-icon:hover {
-  fill: var(--wight-color);
-  background: var(--accent-color);
-}
+/*.team-soc-link-icon:hover {
+  fill: var(--wight-color);*/
 
 /*================ END OUR TEAM =================*/
 
@@ -491,6 +495,10 @@ body {
 }
 
 .customers-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   width: 170px;
   height: 90px;
 
@@ -500,9 +508,24 @@ body {
 }
 
 .customers-link {
+  height: 100%;
+  width: 100%;
+
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.customers-item:hover {
+  border: 1px solid var(--accent-color);
+  fill: var(--accent-color);
+}
+
+.customers-icon {
+  fill: #afb1b8;
+}
+
+.customers-icon:hover {
+  fill: var(--accent-color);
 }
 /*===========END Regular customers==============*/
 
@@ -554,6 +577,8 @@ body {
   margin-left: 70px;
 }
 .footer-subscribe-title {
+  display: inline-flex;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -582,9 +607,6 @@ body {
 
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.1);
-
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 .footer-social-link:hover,
